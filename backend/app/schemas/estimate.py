@@ -9,6 +9,14 @@ class EstimateRequest(BaseModel):
     note: str = ""
 
 
+class BatchEstimateRequest(BaseModel):
+    room_ids: list[int] = Field(default_factory=list)
+    tile_id: int
+    waste_pct: float | None = None
+    save: bool = False
+    note: str = ""
+
+
 class EstimateResponse(BaseModel):
     room_id: int
     tile_id: int

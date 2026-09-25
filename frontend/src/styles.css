@@ -28,3 +28,11 @@ body { margin: 0; font-family: system-ui, sans-serif; background: #f4f0ea; }
 .mini-grid .cell { background: #16a085; aspect-ratio: 1; opacity: 0.85; }
 label { display: block; margin: 0.5rem 0; }
 button { margin-right: 0.5rem; padding: 0.4rem 0.8rem; }
+.room-picker { border: 1px solid #ddd; background: #fff; margin: 0.5rem 0; padding: 0.5rem 1rem; }
+.room-picker .room-option { display: inline-block; margin: 0.25rem 1rem 0.25rem 0; }
+.total-row td { font-weight: 700; background: #f8f4ec; }
+.saved { color: #16a085; }
+tr.open > td { background: #f0f7f5; }
+.run-detail td { background: #fbfaf7; }
+.run-detail table { margin: 0.5rem 0; }
+.clickable { cursor: pointer; }
