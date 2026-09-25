@@ -1,6 +1,6 @@
 from fastapi import APIRouter, Query
 
-from app.schemas.estimate import EstimateRequest
+from app.schemas.estimate import BatchEstimateRequest, EstimateRequest
 from app.services import estimate_service
 
 router = APIRouter(tags=["estimates"])
@@ -20,4 +20,11 @@ def estimate_get(
 def estimate_post(body: EstimateRequest):
     return estimate_service.run_estimate(
         body.room_id, body.tile_id, body.waste_pct, body.save, body.note
+    )
+
+
+@router.post("/estimate/batch")
+def estimate_batch_post(body: BatchEstimateRequest):
+    return estimate_service.run_batch_estimate(
+        body.room_ids, body.tile_id, body.waste_pct, body.save, body.note
     )

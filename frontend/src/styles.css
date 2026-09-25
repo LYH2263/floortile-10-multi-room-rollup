@@ -28,3 +28,7 @@ body { margin: 0; font-family: system-ui, sans-serif; background: #f4f0ea; }
 .mini-grid .cell { background: #16a085; aspect-ratio: 1; opacity: 0.85; }
 label { display: block; margin: 0.5rem 0; }
 button { margin-right: 0.5rem; padding: 0.4rem 0.8rem; }
+.room-picker { border: 1px solid #ddd; background: #fff; margin: 0.5rem 0; }
+.run-row { cursor: pointer; }
+.run-row:hover { background: #f0ebe3; }
+.run-detail td { background: #faf7f2; }
